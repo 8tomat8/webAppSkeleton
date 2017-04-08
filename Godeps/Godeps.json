@@ -1,0 +1,50 @@
+{
+	"ImportPath": "github.com/8tomat8/webAppSkeleton",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/garyburd/redigo/internal",
+			"Comment": "v1.0.0-21-g0d253a6",
+			"Rev": "0d253a66e6e1349f4581d6d2b300ee434ee2da9f"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/redis",
+			"Comment": "v1.0.0-21-g0d253a6",
+			"Rev": "0d253a66e6e1349f4581d6d2b300ee434ee2da9f"
+		},
+		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.3-4-g53e2a9b",
+			"Rev": "53e2a9bf25b20e8f597896666f0663d84e22c68e"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.3.0-5-g599cba5",
+			"Rev": "599cba5e7b6137d46ddf58fb1765f5d928e69604"
+		},
+		{
+			"ImportPath": "github.com/jinzhu/gorm",
+			"Comment": "v1.0-136-g66d5b42",
+			"Rev": "66d5b42ee9d071458e9a430efeb135b29e51e896"
+		},
+		{
+			"ImportPath": "github.com/jinzhu/inflection",
+			"Rev": "1c35d901db3da928c72a72d8458480cc9ade058f"
+		},
+		{
+			"ImportPath": "github.com/pkg/errors",
+			"Comment": "v0.8.0-2-g248dadf",
+			"Rev": "248dadf4e9068a0b3e79f02ed0a610d935de5302"
+		},
+		{
+			"ImportPath": "github.com/sirupsen/logrus",
+			"Comment": "v0.11.5-12-g10f801e",
+			"Rev": "10f801ebc38b33738c9d17d50860f484a0988ff5"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "075e574b89e4c2d22f2286a7e2b919519c6f3547"
+		}
+	]
+}
