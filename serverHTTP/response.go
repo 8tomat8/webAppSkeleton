@@ -12,6 +12,7 @@ type Response struct {
 }
 
 func (h *Handlers) Send(w http.ResponseWriter, resp *Response) {
+	logger := h.env.Log.WithField("type", "send")
 	w.WriteHeader(resp.Status)
 
 	if resp.Error == "" && resp.Status >= 300 {
@@ -21,8 +22,8 @@ func (h *Handlers) Send(w http.ResponseWriter, resp *Response) {
 	enc := json.NewEncoder(w)
 	err := enc.Encode(resp)
 	if err != nil {
-		h.env.Log.Error(err)
+		logger.Error(err)
 	} else {
-		h.env.Log.Debugf("%+v", resp)
+		logger.Debugf("Sent: %+v", resp)
 	}
 }
