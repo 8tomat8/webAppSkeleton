@@ -20,8 +20,10 @@ func (env *Env) dbInit() (err error) {
 		return errors.New("There is no initializer for " + env.Conf.DB.Type)
 	}
 
+	logger := env.Log.WithField("type", "DB")
 	// SQL queries tracing
 	env.DB.LogMode(env.Conf.DB.Debug)
+	env.DB.SetLogger(logger)
 
 	env.wg.Add(1)
 	go func() {
